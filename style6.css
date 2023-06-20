@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+.container{
+    padding: 50px;
+width: 100%;
+padding-left: 250px;
+
+
+   
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns:200px 250px 200px 250px;
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 10px;
+}
+
+.boxa{
+background-image: url("img/display.webp");
+background-size: cover;
+background-position: center;
+
+font-weight: 600;
+grid-row: 1/3;
+grid-column: 1/3;
+}
+.boxa div{
+    height: 20px;
+    
+    width: 150px;
+}
+.boxb{
+    background-color:#5fe2f3;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    grid-column: 1/2;
+}
+.boxb h1{
+    margin: 25px; 
+    font-size: 30px;
+     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+      
+}
+.boxc{
+    background-color:#5fe2f3;
+    display: flex;
+     align-items: center;
+     justify-content: center;
+    grid-column:1/2 ;
+    grid-row: 3/4;
+
+}
+.boxc div{
+    margin: 25px; 
+    font-size: 20px;
+     font-weight: 600;
+     
+height: 20px;
+width: 150px;
+    }
+
+.boxd{
+    background-image: url(img/charging.webp);
+    background-size: cover;
+background-position: center;
+    grid-column:3/5 ;
+    grid-row: 1/2;
+    
+}
+.boxd div{
+    height: 20px;
+   
+    width: 150px;
+}
+.boxe{
+    background-image: url(img/5000.webp);
+    background-size: cover;
+    background-position: center;
+    grid-column: 4/5;
+    grid-row: 3/5;
+}
+.boxe div{
+    height: 20px;
+   
+    width: 150px;
+}
+.boxf{
+    background-image: url(img/share.webp);
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/4;
+    grid-row: 3/5;
+}
+.boxf div{
+    height: 20px;
+   
+    width: 150px;
+   
+}
+.boxg{
+    background-color: aquamarine;
+    background-image: url(img/snap.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+   align-items: center;
+   justify-content: end;
+grid-row: 2/3;
+grid-column: 3/5;
+}
+.boxg div{
+    height: 70px;
+   
+
+    width: 200px;
+   
+}
+@media(max-width:960px){
+    .container{
+        background-color: gray;
+        grid-template-columns: repeat(2, 50%);
+min-height: 100vh;
+        grid-template-rows: auto;
+    
+padding: 50px;    
+}
+    .boxa{
+        grid-column: 1/3;
+grid-row: 1/2;
+    }
+   .boxb{
+    grid-column: 2/3;
+    grid-row: 2/3;
+   }
+.boxc{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.boxd{
+grid-row: 4/5;
+grid-column: 2/3;
+}
+.boxe{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    
+}
+.boxf{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.boxg{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+}
+@media(max-width:720px){
+    .container{
+        background-color: white;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        min-height: 100vh;
+
+padding: 50px;
+
+    }
+    .boxa{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .boxb{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .boxc{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: 100px;
+    }
+    .boxd{
+        height: 100px;
+        grid-column: 1/2;
+        grid-row: 4/5;
+
+    }
+    .boxe{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        height: 100px;
+    }
+        .boxf{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    height: 100px;
+    }
+    .boxg{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+}
